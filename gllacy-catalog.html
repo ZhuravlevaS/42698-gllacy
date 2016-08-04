@@ -9,7 +9,7 @@
     <body>
         
      <header>
-         <div class="logo"><img src=""></div>
+         <img src="#" class="logo"  alt="GllacyShop">
          <nav>
              <ul class="main-menu">
               <li class="selected">Каталог</li>
@@ -39,7 +39,7 @@
           </div>
              
           <div class="basket"></div>
-<!--             тут надо делать js ?-->
+
          </div>
          <div class="contact-info">С 10 до 20, ежедневно<br>8 812 450-25-25 </div>
      </header> 
@@ -56,10 +56,14 @@
        <form>
           <div class="sorting"> 
             Сортировка:
-            <select>
-             <option>по популярности</option>
-             <option>по цене</option>    
-            </select> 
+             <form> 
+             <select>
+              <option>по популярности</option>
+              <option>сначала недорогие</option> 
+              <option>сначала дорогие</option> 
+              <option>по жирности</option>   
+             </select> 
+              </form>   
           </div>
            
           <div class="sort-price">     
@@ -153,9 +157,47 @@
                  <div class="good-description">Сливочноe с ментоловым сиропом</div>
                  <a href="#">Быстрый просмотр</a>
              </div>
+             <div class="good">
+                 <img src="#">
+                 <div class="good-price">355 р/кг</div>
+                 <div class="good-description">Сливочное с кусочками черного шоколада</div>
+                 <a href="#">Быстрый просмотр</a>
+             </div>
+             <div class="good">
+                 <img src="#">
+                 <div class="good-price">420 р/кг</div>
+                 <div class="good-description">Сливочное с мятным сиропом</div>
+                 <a href="#">Быстрый просмотр</a>
+             </div>
          </div>
+         <div class="paginator">
+             <div class="back"></div>
+          <ul>
+              <li class="checked-page"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+         <div class="next"></div>
+         </div>        
      </main>
      <footer>
+         <ul class="social">
+             <li><a href="#" class="twit social-icon"></a></li>
+             <li><a href="#" class="instagram social-icon"></a></li>
+             <li><a href="#" class="fb social-icon"></a></li>
+             <li><a href="#" class="vk social-icon"></a></li>
+         </ul>
+         <ul class="footer-info">
+             <li><a href="#">Для поставщиков</a></li>
+             <li><a href="#">Наши документы</a></li>
+             <li><a href="#">О производстве</a></li>
+             <li><a href="#">Экологические стандарты</a></li>
+         </ul>
+         
+         <img src="#" class="html-logo" alt="Академия HTML">
+         <a href="https://htmlacademy.ru/">Сделано в <span>HTML Academy</span> © 2016</a>
      </footer>
     </body>
 </html>
