@@ -1,0 +1,40 @@
+
+body {
+    background-color: #9aafa3;
+}
+
+.logo {
+    width: 154px; 
+    height: 64px;
+    display: block;  
+    float:left;
+    margin-top:9px;
+    margin-left: 21px;
+}
+
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.main-menu li{
+  display:inline-block;
+  margin-left: -4px;  
+}
+
+nav {
+    float:left;
+    margin-left: 20px;
+    margin-top:23px;
+}
+
+.main-menu li a {
+ padding: 8px 14px;
+}
+
+.main-menu .selected{
+  background: #d07058;
+  padding: 8px 14px;
+}
