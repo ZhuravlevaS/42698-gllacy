@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">  
    <meta name="keywords" content="#">
     <meta name="description" content="#"> 
-     <link href="normalize.css" rel="stylesheet">
-     <link href="gllacy-catalog.html" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/gllacy.css" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
       <title>HTML Academy: Глейси</title>
 </head>
     <body>
         
-     <header>
-         <a href="#" class="logo"></a>
+     <header class="container">
+         <a href="#"><img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64"></a>
          <nav>
              <ul class="main-menu">
-              <li class="selected">Каталог</li>
-                 <ul>
-                  <li>Новинки</li>
-                  <li>Сливочное</li>
-                  <li>Щербеты</li>    
-                  <li>Фруктовый лед</li>
-                  <li>Мелорин</li>     
+               <li class="selected">Каталог
+                 <ul class="submenu">
+                     <li><a class="new">Новинки</a></li>
+                     <li><a>Сливочное</a></li>
+                     <li><a>Щербеты</a></li>    
+                     <li><a>Фруктовый лед</a></li>
+                     <li><a>Мелорин</a></li>     
                  </ul>
-              <li>Доставка и оплата</li> 
-              <li>О Компании</li>   
+                 </li>
+                 <li><a><span class="underline">Доставка и оплата</span></a></li> 
+                 <li><a><span class="underline">О Компании</span></a></li>   
              </ul>
          </nav>
          <div class="user-block">
-          <div class="search-icon">
+           <div class="search-icon">
                <input name="search" value="Что ищем?">
-          </div>
+           </div>
              
           <div class="login">
             <input type="text" name="email" value="Электронная почта">
@@ -42,10 +44,10 @@
          <div class="contact-info"><p>С 10 до 20, ежедневно</p><p>8 812 450-25-25</p></div>
      </header> 
         
-     <main>
+     <main class="container">
          <ul class="breadcrumbs">
-             <li><a href="#">Главная</a></li>
-             <li><a href="#">Каталог</a></li>
+             <li><a href="#"><span class="underline">Главная</span></a></li>
+             <li><a href="#"><span class="underline">Каталог</span></a></li>
              <li><a href=#>Сливочное</a></li>     
          </ul> 
          
@@ -78,10 +80,10 @@
            </div>  
            <div class="sort-fat">     
               Жирность:
-              <label><input type="radio" name="fat" value="0"> 0&#037</label>
-              <label><input type="radio" name="fat" value="less10"> до 10&#037</label>
-              <label><input type="radio" name="fat" value="less30">до 30&#037</label>
-              <label><input type="radio" name="fat" value="more30">выше 30&#037</label>
+              <label><input type="radio" name="fat" value="0"> 0&#037;</label>
+              <label><input type="radio" name="fat" value="less10"> до 10&#037;</label>
+              <label><input type="radio" name="fat" value="less30">до 30&#037;</label>
+              <label><input type="radio" name="fat" value="more30">выше 30&#037;</label>
            </div>
            
            <div class="sort-toppings">
@@ -97,91 +99,91 @@
          
          <div class="goods">
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">310 &#8381/кг</div>
-                 <div class="good-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                 <a href="#"><img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                 <div class="good-price">310 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">380 &#8381/кг</div>
-                 <div class="good-description">Сливочно-кофейное с кусочками шоколада</div>
+                 <a href="#"><img src="#" alt="Сливочно-кофейное с кусочками шоколада"></a>
+                 <div class="good-price">380 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>  
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">355 &#8381/кг</div>
-                 <div class="good-description">Сливочно-клубничное с присыпкой из белого шоколада</div>
+                 <a href="#"><img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+                 <div class="good-price">355 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">415 &#8381/кг</div>
-                 <div class="good-description">Сливочное крем-брюле с карамельной подливкой</div>
+                 <a href="#"><img src="#" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+                 <div class="good-price">415 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">325 &#8381/кг</div>
-                 <div class="good-description">Сливочное с брусничным джемом</div>
+                 <a href="#"><img src="#" alt="Сливочное с брусничным джемом"></a>
+                 <div class="good-price">325 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с брусничным джемом</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">410 &#8381/кг</div>
-                 <div class="good-description">Сливочно-черничное с цельными ягодами черники </div>
+                 <a href="#"><img src="#" alt="Сливочно-черничное с цельными ягодами черники"></a>
+                 <div class="good-price">410 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-черничное с цельными ягодами черники </span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">375 &#8381/кг</div>
-                 <div class="good-description">Сливочно-лимонное с карамельной присыпкой</div>
+                  <a href="#"><img src="#" alt="Сливочно-лимонное с карамельной присыпкой"></a>
+                 <div class="good-price">375 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-лимонное с карамельной присыпкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">320 &#8381/кг</div>
-                 <div class="good-description">Сливочное с шоколадной стружкой</div>
+                  <a href="#"><img src="#" alt="Сливочное с шоколадной стружкой"></a>
+                 <div class="good-price">320 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с шоколадной стружкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">440 &#8381/кг</div>
-                 <div class="good-description">Сливочно-ванильное с кусочками шоколада</div>
+                  <a href="#"><img src="#" alt="Сливочно-ванильное с кусочками шоколада"></a>
+                 <div class="good-price">440 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-ванильное с кусочками шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">435 &#8381/кг</div>
-                 <div class="good-description">Сливочноe с ментоловым сиропом</div>
+                  <a href="#"><img src="#" alt="Сливочноe с ментоловым сиропом"></a>
+                 <div class="good-price">435 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочноe с ментоловым сиропом</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">355 &#8381/кг</div>
-                 <div class="good-description">Сливочное с кусочками черного шоколада</div>
+                 <a href="#"><img src="#" alt="Сливочное с кусочками черного шоколада"></a>
+                 <div class="good-price">355 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с кусочками черного шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <a href="#"><img src="#"></a>
-                 <div class="good-price">420 &#8381/кг</div>
-                 <div class="good-description">Сливочное с мятным сиропом</div>
+                 <a href="#"><img src="#" alt="Сливочное с мятным сиропом"></a>
+                 <div class="good-price">420 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с мятным сиропом</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
          </div>
          <div class="paginator">
-             <div class="back"></div>
+             <div class="page-back"></div>
           <ul>
-              <li class="checked-page"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li class="checked-page">1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
           </ul>
-         <div class="next"></div>
+         <div class="page-next"></div>
          </div>        
      </main>
-     <footer>
+     <footer class="container">
          <ul class="social">
              <li><a href="#" class="twit social-icon"></a></li>
              <li><a href="#" class="instagram social-icon"></a></li>

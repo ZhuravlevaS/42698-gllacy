@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
  <head>
   <meta charset="utf-8">  
    <meta name="keywords" content="#">
     <meta name="description" content="#"> 
-    <link href="normalize.css" rel="stylesheet">
-     <link href="gllacy-index.html" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/gllacy.css" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
       <title>HTML Academy: Глейси</title>
  </head>
-    <header>
-         <a href="#" class="logo"></a>
+    <body>
+    <header  class="container">
+          <img src="img/logo.svg" class="logo" alt="GllacyShop">
          <nav>
              <ul class="main-menu">
-              <li class="selected">Каталог</li>
-                 <ul>
-                  <li>Новинки</li>
-                  <li>Сливочное</li>
-                  <li>Щербеты</li>    
-                  <li>Фруктовый лед</li>
-                  <li>Мелорин</li>     
+                 <li><a><span class="underline">Каталог</span></a>
+                 <ul class="submenu">
+                     <li><a class="new">Новинки</a></li>
+                     <li><a>Сливочное</a></li>
+                     <li><a>Щербеты</a></li>    
+                     <li><a>Фруктовый лед</a></li>
+                     <li><a>Мелорин</a></li>     
                  </ul>
-              <li>Доставка и оплата</li> 
-              <li>О Компании</li>   
+              </li>  
+                 <li><a><span class="underline">Доставка и оплата</span></a></li> 
+                 <li><a><span class="underline">О Компании</span></a></li>   
              </ul>
          </nav>
          <div class="user-block">
@@ -40,7 +43,7 @@
          <div class="contact-info"><p>С 10 до 20, ежедневно</p><p>8 812 450-25-25</p></div>
      </header> 
     
-    <body>
+    <main class="container">
     <div class="header-icecream">
 <!--    не готова написать разметку  надо посоветоваться  -->
     </div>
@@ -55,32 +58,32 @@
             <span>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</span>
               <a href="#">Хочу шоколадки!</a>
         </div>
-        
+          <div class="goods">
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">310 &#8381/кг</div>
-                 <div class="good-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                 <img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                 <div class="good-price">310 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">380 &#8381/кг</div>
-                 <div class="good-description">Сливочно-кофейное с кусочками шоколада</div>
+                 <img src="#" alt="Сливочно-кофейное с кусочками шоколада">
+                 <div class="good-price">380 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>  
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">355 &#8381/кг</div>
-                 <div class="good-description">Сливочно-клубничное с присыпкой из белого шоколада</div>
+                 <img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                 <div class="good-price">355 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
              <div class="good">
-                 <img src="#">
-                 <div class="good-price">415 &#8381/кг</div>
-                 <div class="good-description">Сливочное крем-брюле с карамельной подливкой</div>
+                 <img src="#" alt="Сливочное крем-брюле с карамельной подливкой">
+                 <div class="good-price">415 &#8381;&#047;кг</div>
+                 <div class="good-description"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></div>
                  <a href="#">Быстрый просмотр</a>
              </div>
-        
+         </div>
         <div class="about-us">
         <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
         <div class="first-line-about-us">
@@ -99,12 +102,12 @@
             <div class="subscribe">
                <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </span>
                  <form>
-                    <input type="post" name="email" value="Электронная почта">
-                    <input type="submit" name="send" value="Отправить">
+                    <input type="text" name="email" value="Электронная почта">
+                    <button type="submit" name="send">Отправить</button>
                  </form>
             </div>
          <div class="info">
-            <img src="#" class="mark">
+            <img src="#" class="mark" alt="мороженко">
             <div class="map-info">
                Адрес главного офиса и офлайн магазина:
                 <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -116,8 +119,8 @@
             </div>
         
          </div>
-    
-    <footer>
+        </main>
+    <footer class="container">
          <ul class="social">
              <li><a href="#" class="twit social-icon"></a></li>
              <li><a href="#" class="instagram social-icon"></a></li>
@@ -134,15 +137,16 @@
          <img src="#" class="html-logo" alt="Академия HTML">
          <a href="https://htmlacademy.ru/">Сделано в <span>HTML Academy</span> © 2016</a>
      </footer>
-    </body>
-    <div class="popup">
+        <div class="popup">
          <form>
              <span>Мы обязательно вам ответим!</span>
               <button class="close"></button>
               <input type="text" name="name" value="Как вас зовут?">
               <input type="text" name="email" value="Ваша почта для ответа?">
-              <textarea name="text" rows="" cols="">Напишите что-нибудь...</textarea>
-              <input type="submit" name="send" value="Отправить">
+              <textarea name="text" rows="#" cols="#">Напишите что-нибудь...</textarea>
+              <button type="submit" name="send">Отправить</button>
          </form>
     </div>
+     </body>
+    
 </html>

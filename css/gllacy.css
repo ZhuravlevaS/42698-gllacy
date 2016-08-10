@@ -1,6 +1,9 @@
-
 body {
     background-color: #9aafa3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color:white;
 }
 
 .logo {
@@ -10,6 +13,7 @@ body {
     float:left;
     margin-top:9px;
     margin-left: 21px;
+    
 }
 
 
@@ -19,9 +23,10 @@ body {
     margin:0;
 }
 
-.main-menu li{
+.main-menu>li{
   display:inline-block;
-  margin-left: -4px;  
+  margin-left: -4px; 
+  position: relative;    
 }
 
 nav {
@@ -30,11 +35,60 @@ nav {
     margin-top:23px;
 }
 
-.main-menu li a {
+.main-menu li>a {
  padding: 8px 14px;
 }
 
 .main-menu .selected{
   background: #d07058;
   padding: 8px 14px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;  
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.submenu li a {
+  display:block;
+  font-size: 14px;
+  color: #323232;
+  line-height: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 14px;
+  box-sizing: 143px;
+  background: #f8f7f4;
+   
+}
+
+.submenu li {
+   
+   box-sizing: 143px; 
+}
+
+.new {
+    font-weight: bold;
+    border-bottom: 1px solid #d1d0ce;
+}
+
+.submenu li a:hover {
+   background: #fbded7; 
+}
+
+li:hover .submenu {
+ display: block;   
+}
+
+
+
+.underline{
+    border-bottom: 1px solid RGBA(255,255,255,0.2);
 }
