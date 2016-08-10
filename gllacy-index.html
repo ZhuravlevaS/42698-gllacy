@@ -14,29 +14,31 @@
           <img src="img/logo.svg" class="logo" alt="GllacyShop">
          <nav>
              <ul class="main-menu">
-                 <li><a><span class="underline">Каталог</span></a>
+                 <li><a href="#"><span class="underline">Каталог</span></a>
                  <ul class="submenu">
-                     <li><a class="new">Новинки</a></li>
-                     <li><a>Сливочное</a></li>
-                     <li><a>Щербеты</a></li>    
-                     <li><a>Фруктовый лед</a></li>
-                     <li><a>Мелорин</a></li>     
+                     <li><a href="#" class="new radious-top">Новинки<div class="line"></div></a></li>
+                     <li><a href="#">Сливочное</a></li>
+                     <li><a href="#">Щербеты</a></li>    
+                     <li><a href="#">Фруктовый лед</a></li>
+                     <li><a href="#" class="radious-bottom">Мелорин</a></li>     
                  </ul>
               </li>  
-                 <li><a><span class="underline">Доставка и оплата</span></a></li> 
-                 <li><a><span class="underline">О Компании</span></a></li>   
+                 <li><a href="#"><span class="underline">Доставка и оплата</span></a></li> 
+                 <li><a href="#"><span class="underline">О Компании</span></a></li>   
              </ul>
          </nav>
          <div class="user-block">
-          <div class="search-icon">
-               <input name="search" value="Что ищем?">
-          </div>
-             
-          <div class="login">
-            <input type="text" name="email" value="Электронная почта">
-            <input type="password" name="password" value="Пароль">        
-          </div>
-             
+             <div class="search-icon">
+                 <div class="search-form">
+                      <input name="search" value="Что ищем?">
+                 </div>
+             </div>
+             <div class="login-icon">
+                  <div class="login-form">
+                      <input type="text" name="email" value="Электронная почта">
+                      <input type="password" name="password" value="Пароль">        
+                 </div>
+             </div>
           <div class="basket"></div>
 
          </div>
@@ -45,7 +47,30 @@
     
     <main class="container">
     <div class="header-icecream">
-<!--    не готова написать разметку  надо посоветоваться  -->
+        <div class="gradient">
+            <div class="ice-cream-promo-1">
+                <h2>Крем-брюле и пломбир
+                 с малиновым джемом</h2>
+                <a href="#">Давайте оба!</a>
+            </div>
+        </div>
+        <div class="gradient">
+            <div class="ice-cream-promo-2">
+                <h2>Шоколадный пломбир
+                и лимонный сорбет</h2>
+                <a href="#">Давайте оба!</a>
+            </div>
+        </div>
+        <div class="gradient">
+            <div class="ice-cream-promo-3">
+                <h2>Пломбир с помадкой
+                 и клубничный щербет</h2>
+                <a href="#">Давайте оба!</a>
+            </div>
+        </div>
+        <input type="radio" name="ice-radio" value="ice-cream-promo-1">
+        <input type="radio" name="ice-radio" value="ice-cream-promo-2">
+        <input type="radio" name="ice-radio" value="ice-cream-promo-3">
     </div>
         
         <div class="promo-jam">
