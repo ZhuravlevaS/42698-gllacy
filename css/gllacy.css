@@ -1,0 +1,141 @@
+body {
+    background-color: #9aafa3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.logo {
+    width: 154px; 
+    height: 64px;
+    display: block;  
+    float:left;
+    margin-top:9px;
+    margin-left: 21px;
+    
+}
+
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.main-menu>li {
+  display: inline-block;
+  margin-left: -4px; 
+  position: relative;
+}
+.main-menu>li>a {
+  font-weight: bold;  
+}
+nav {
+    float:left;
+    margin-left: 20px;
+    margin-top:23px;
+}
+
+.main-menu li>a {
+ padding: 8px 14px;
+ text-decoration: none;
+ color:white;
+}
+
+.main-menu .selected>a{
+  background: #d07058;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;  
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left:-7px;
+}
+
+.submenu li a {
+  display:block;
+  font-size: 14px;
+  color: #323232;
+  line-height: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 14px;
+  background: #f8f7f4;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  width: 143px;
+   
+}
+
+.submenu li:first-child a {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;    
+}
+
+.new {
+    font-weight: bold;
+    
+}
+
+.submenu li a:hover {
+   background: #fbded7; 
+}
+
+li:hover .submenu {
+ display: block;   
+}
+
+
+
+.underline {
+    border-bottom: 1px solid RGBA(255,255,255,0.2);
+}
+
+.line {
+    width: 127px;
+    height: 1px;
+    background: #d1d0ce;
+    position: absolute;
+    top: 38px;
+    left:6px;
+    bottom: 0;
+}
+
+.submenu li:last-child a{
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+    
+}
+
+.submenu li a:active {
+   background: #f6b5a5; 
+}
+
+.submenu li .active {
+    background: #d07058;
+}
+
+.main-menu>li>a:hover{
+  background: #f7f6f3;
+  color: #333333;
+  font-weight: bold;
+  border-bottom-left-radius: 17px;
+  border-top-left-radius: 17px;  
+  border-bottom-right-radius: 17px;
+  border-top-right-radius: 17px;   
+}
+
+.main-menu .selected:hover a{
+  background: #f7f6f3;
+  color:black;
+}
