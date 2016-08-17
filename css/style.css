@@ -4,7 +4,6 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: white;
-    width:1200px;
     margin: 0 auto;
 }
 .logo {
@@ -62,6 +61,7 @@ nav {
     border-radius: 5px;
     border-top:5px solid transparent;
     background-clip: content-box;
+    box-shadow: 0 21px 21px 5px #5a6861;
 }
 
 .submenu-link {
@@ -148,7 +148,7 @@ li:hover .submenu {
 
 .user-block {
     float:right;
-    width: 293 px;
+    width: 293px;
     min-height: 32px;
     margin-top:23px;
 }
@@ -164,20 +164,34 @@ li:hover .submenu {
 }
 
 .search-form {
-/*    display: none;*/
+  display: none;
+  box-sizing: border-box;
+  width: 341px;
+  min-height: 84px;
+  padding: 20px 15px;;    
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  position: absolute;
+  top:36px;
+  left: -308px;    
 }
 
 .login-form {
-    display: none;
+/*    display: none;*/
+    position: absolute;
+    width: 277px;
+    min-height: 214px;
+    background: #f8f7f4;
+    border-radius: 5px;
 }
 
 .breadcrumbs {
     margin: 0;
     padding: 0;
     list-style: none;
-margin-left: 3px;
-    margin-top: -51px;
-    
+    margin-left: 3px;
+    margin-top: 22px;
+    float:left;    
 }
 
 .breadcumbs-item {
@@ -225,11 +239,12 @@ margin-left: 3px;
     float:right;
 }
 .footer-item {
-    display: inline-block;
-    margin-right: 22px;
+    float:left;
+    
 }
 .social {
-    width:267px;
+    width:293px;
+    min-height: 67px;
     padding: 0;
     margin:0;
     list-style: none;
@@ -237,7 +252,7 @@ margin-left: 3px;
 }
 
 .footer-info {
-    width:560px;
+    width:586px;
      padding: 0;
     margin:0;
     list-style: none;
@@ -258,10 +273,11 @@ margin-left: 3px;
 
 .promo-jam {
     float: left;
+    margin-right: 26px;
 }
 
 .promo-chockotop {
-    float:right;
+    float: left;
 }
 
 .about-us {
@@ -290,7 +306,7 @@ margin-left: 3px;
 .info-to-get {
     width:1200px;
     min-height: 430px;
-    background-image: url(/img/map.jpg);
+    background-image: url("/img/map.jpg");
     position: relative;
 }
 
@@ -350,4 +366,132 @@ border-top-right-radius: 5px;
 
 .ice-cream {
     mar
+}
+
+.wrapper {
+    width:1200px;
+    margin:0 auto;
+}
+
+.contact-info p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;  
+  text-align: right;
+}
+
+.contact-info-text-1 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+  .main-menu-link:active {
+  background: #ededed;
+  color: #333333;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: inset 0 3px 2px 0 #818884;   
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    
+}
+
+.loupe {
+  fill: #fff;
+  fill-rule: evenodd; 
+}
+
+
+
+.search-icon:hover {
+    background: #f8f7f4;
+}
+
+.search-icon:hover .loupe {
+    fill: black;
+}
+
+.search-icon:hover .search-form {
+   display: block; 
+}
+
+.search-form-input {
+    width: 283px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #d3d3d2;
+    padding: 0 13px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #999999;
+
+}
+
+.search-form-wrapper {
+    border-top: 5px solid transparent;
+}
+
+
+
+.login-icon {
+        fill: #fff;
+        fill-opacity: 0.99;
+        fill-rule: evenodd;
+}
+
+.login {
+    width:92px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    padding-top: 6px;
+    position: relative;
+}
+
+
+
+.login span {
+    font-size: 14px;
+    line-height: 17px;
+    vertical-align: top;
+    margin-left: 3px;
+/*    font-weight: bold;*/
+}
+
+.user-block-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login:hover {
+  background: #f8f7f4;  
+}
+
+.login:hover .login-icon {
+  fill: black;  
+}
+
+.login:hover span {
+    color:black;
+}
+
+.login-form-input {
+    width: 239px;
+    
+    border-radius: 4px;
+    border: 1px solid #d3d3d2;
 }

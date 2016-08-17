@@ -417,3 +417,7 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+.contact-info-text-2 {
+    font-size: 22px;
+    line-height: 31px;
+}
