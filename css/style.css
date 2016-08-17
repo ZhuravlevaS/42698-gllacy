@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    color: white;
+    color: #fefefe;
     margin: 0 auto;
 }
 .logo {
@@ -435,17 +435,7 @@ border-top-right-radius: 5px;
 }
 
 .search-form-input {
-    width: 283px;
-    height: 42px;
-    border-radius: 4px;
-    border: 1px solid #d3d3d2;
-    padding: 0 13px;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-
-    color: #999999;
-
+    width: 311px;
 }
 
 .form-wrapper {
@@ -490,16 +480,11 @@ border-top-right-radius: 5px;
 }
 
 .login-form-input {
-    width: 240px;
-    line-height: 42px;
+    width: 240px; 
     margin: 0 19px;;
     margin-top: 20px;
-    color: #999999;
-    font-size: 14px;
-    box-sizing: border-box;
-    padding: 0 13px;
-    border-radius: 4px;
-    border: 1px solid #d3d3d2;
+/*    box-sizing: border-box;*/
+    
 }
 
 .login-btn {
@@ -569,4 +554,92 @@ border-top-right-radius: 5px;
 .new-registration {
     display: inline-block;
     margin-left: 1px;
+}
+
+.form-input {
+  min-height: 42px;    
+  color: #000;    
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d2;
+  padding: 0 13px;
+  line-height: 24px;
+  box-sizing: border-box;    
+}
+
+.form-input:hover {
+  border: 2px solid #c7c6c5; 
+  border-radius: 4px;
+}
+.form-input:-ms-input-placeholder {
+    color: #999999;
+}
+.form-input:-moz-placeholder {
+    color: #999999;
+}
+.form-input::-moz-placeholder {
+    color: #999999;
+}
+.form-input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.login-link:hover {
+    color: #e84d37;
+    text-decoration: none;
+    border-bottom: 1px solid #f9cdc4; 
+}
+
+.login-link:active {
+    color: #e84d37;
+    text-decoration: none;
+    border-bottom: 1px solid #f9cdc4; 
+}
+
+.social-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 3px solid #c2cec7;
+  cursor: pointer;
+}
+
+.social-icon {
+   fill: #fff;
+   fill-rule: evenodd;
+   opacity: 0.8; 
+}
+
+.social-item:hover .social-icon {
+     fill: #fff;
+   fill-rule: evenodd;
+   opacity: 1; 
+}
+
+.html-academy-link {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.copyright p{
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px;
+   line-height: 16px;
+   vertical-align: bottom;
+}
+
+
+.social-item:hover {
+    border: 3px solid #dbe3de;
+}
+
+
+
+.html-logo {
+    cursor: pointer;
 }
