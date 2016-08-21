@@ -36,8 +36,9 @@
                 </svg>
                  
                   <div class="form-wrapper">
-                    <div class="search-form">
-                         <input class="search-form-input" name="search" value="Что ищем?">
+                    <div class="search-form"> 
+                         <input class="search-form-input form-input" id="search" placeholder="Что ищем?">
+                        <label for="#search" class="sign sign-search">Что ищем?</label>
                     </div>
                  </div>
                
@@ -56,10 +57,11 @@
                  
                  
                      <div class="login-form">
-                      
-                         <input class="login-form-input" type="text" name="email" value="Электронная почта">
-                         <input class="login-form-input" type="password" name="password" value="Пароль"> 
-                      
+                        
+                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта"> <label for="#email" class="sign sign-email">Электронная почта</label>
+                         
+                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль"> 
+                         <label for="#password" class="sign sign-password">Пароль</label>
                       
                               <a href="#" class="login-btn">Войти</a>
                          <div class="login-link-wrapper">
@@ -68,8 +70,22 @@
                          </div>
                     </div>
              </div>
-          <div class="basket user-block-item"></div>
-
+          <div class="basket user-block-item">
+              
+              <div class="basket-icon-wrapper">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
+  
+                  <path id="Корзина" class="basket-icon" d="M1328.58,670.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.733,3.733,0,0,1-.13-1.054H1309a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1328.17,668.01,1328.84,669.141,1328.58,670.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.034,0.034,0,0,0-.01.014h-10.67Zm0.52,3.008a1.875,1.875,0,1,1-1.88,1.875A1.875,1.875,0,0,1,1315.25,681.986Zm9,0a1.875,1.875,0,1,1-1.88,1.875A1.875,1.875,0,0,1,1324.25,681.986Z" transform="translate(-1308 -666.031)"/>
+                  </svg>
+                  
+              <span>
+                 Пусто
+              </span>
+                  
+              </div>
+             </div>
+ 
          </div>
          
      </header> 

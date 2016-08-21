@@ -38,7 +38,9 @@
                  
                   <div class="form-wrapper">
                     <div class="search-form">
-                         <input class="search-form-input" name="search" value="Что ищем?">
+                         <input class="search-form-input form-input" name="search" placeholder="Что ищем?">
+                          <label for="#search" class="sign sign-search">Что ищем?</label>                      
+
                     </div>
                  </div>
                
@@ -57,8 +59,10 @@
                  
                     <div class="login-form">
                       
-                         <input class="login-form-input" type="text" name="email" value="Электронная почта">
-                         <input class="login-form-input" type="password" name="password" value="Пароль"> 
+                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта"> <label for="#email" class="sign sign-email">Электронная почта</label>
+                         
+                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль"> 
+                         <label for="#password" class="sign sign-password">Пароль</label>
                       
                       
                               <a href="#" class="login-btn">Войти</a>
@@ -70,8 +74,25 @@
              </div>
              
           <div class="basket user-block-item">
-             
-          </div>
+              
+              <div class="basket-fill-icon-wrapper">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.63" height="19.719" viewBox="0 0 20.63 19.719">
+  
+                  <path id="Корзина" class="basket-fill-icon" d="M1328.58,670.46l-1.21,8.912a2.025,2.025,0,0,1-1.88,1.635h-10.88a2.025,2.025,0,0,1-1.88-1.635l-1.47-10.287a3.733,3.733,0,0,1-.13-1.054H1309a1,1,0,0,1,0-2h4a0.992,0.992,0,0,1,.1,1.98h13.97C1328.17,668.01,1328.84,669.141,1328.58,670.46Zm-13.85,8.518-1.31-9h13.2l-0.03.2-1.18,8.788a0.034,0.034,0,0,0-.01.014h-10.67Zm0.52,3.008a1.875,1.875,0,1,1-1.88,1.875A1.875,1.875,0,0,1,1315.25,681.986Zm9,0a1.875,1.875,0,1,1-1.88,1.875A1.875,1.875,0,0,1,1324.25,681.986Z" transform="translate(-1308 -666.031)"/>
+                  </svg>
+                  <div class="bascket-fill-icon-red-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="14.6" height="9" viewBox="0 0 15.13 10.25">
+  
+                     <path id="Корзина_заполнена" data-name="Корзина заполнена" class="bascket-fill-icon-red" d="M1075.5,32.375h15.12l-1.37,10.25-12.63-.125Z" transform="translate(-1075.5 -32.375)"/>
+                    </svg></div>
+                  
+                  
+              <span class="basket-fill">
+                 2 товара
+              </span>
+                  
+              </div>
+             </div>
 
          </div>
          
@@ -220,24 +241,48 @@
          <div class="page-next"></div>
          </div>        
      </main>
-     <footer class="container clearfix">
+     <footer class="container clearfix footer-catalog">
+         
          <ul class="social footer-item">
-             <li><a href="#" class="twit social-icon"></a></li>
-             <li><a href="#" class="instagram social-icon"></a></li>
-             <li><a href="#" class="fb social-icon"></a></li>
-             <li><a href="#" class="vk social-icon"></a></li>
+             <li class="social-item"><a href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.4" viewBox="0 0 31.375 31.4">
+  
+                     <path id="Твитер" class="social-icon" d="M45.427,1582.17a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,45.427,1582.17Zm9.138,10.81a7.331,7.331,0,0,1-2.092.57,3.662,3.662,0,0,0,1.6-2.02,7.4,7.4,0,0,1-2.313.89,3.645,3.645,0,0,0-6.207,3.32,10.316,10.316,0,0,1-7.507-3.81,3.655,3.655,0,0,0,1.127,4.87,3.68,3.68,0,0,1-1.65-.46c0,0.02,0,.03,0,0.05a3.651,3.651,0,0,0,2.922,3.57,3.789,3.789,0,0,1-.96.13,3.86,3.86,0,0,1-.685-0.07,3.643,3.643,0,0,0,3.4,2.53,7.29,7.29,0,0,1-4.523,1.56,8.291,8.291,0,0,1-.869-0.05,10.354,10.354,0,0,0,15.946-8.73c0-.16,0-0.31-0.011-0.47A7.33,7.33,0,0,0,54.565,1592.98Z" transform="translate(-29.75 -1582.16)"/>
+                 </svg> 
+                 </a></li>
+             
+             <li class="social-item"><a href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="31.376" height="31.41" viewBox="0 0 31.376 31.41">
+  
+                      <path id="Инста" class="social-icon" d="M94.865,1582.23a15.69,15.69,0,1,1-15.692,15.69A15.688,15.688,0,0,1,94.865,1582.23Zm6.271,23.61a1.745,1.745,0,0,0,1.745-1.75v-12.31a1.743,1.743,0,0,0-1.745-1.74H88.809a1.743,1.743,0,0,0-1.745,1.74v12.31a1.745,1.745,0,0,0,1.745,1.75h12.328Zm-1.375-9.1a4.921,4.921,0,1,1-9.529,0h-1.38v6.78a0.609,0.609,0,0,0,.611.61h11.065a0.609,0.609,0,0,0,.612-0.61v-6.78h-1.38ZM95,1595.13a2.848,2.848,0,1,1,0,5.68A2.84,2.84,0,0,1,95,1595.13Zm3.7-3.31h1.865a0.609,0.609,0,0,1,.611.61v1.86a0.609,0.609,0,0,1-.611.61H98.7a0.609,0.609,0,0,1-.612-0.61v-1.86A0.609,0.609,0,0,1,98.7,1591.82Z" transform="translate(-79.188 -1582.22)"/>
+                 </svg>
+                 </a></li>
+             
+             <li class="social-item"><a href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+
+                    <path id="ФБ" class="social-icon" d="M143.865,1582.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,143.865,1582.23Zm0.773,24.99v-9.29h2.743l0.285-3.09h-3.028l0-1.86c0-.89.085-1.26,1.367-1.26h1.764v-3.42h-2.792c-3.294,0-4.082,1.54-4.082,4.34v2.2h-1.889v3.09H140.9v9.29h3.738Z" transform="translate(-128.188 -1582.22)"/>
+                 </svg>
+                 </a></li>
+             <li class="social-item"><a href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="31.375" height="31.41" viewBox="0 0 31.375 31.41">
+  
+                      <path id="ВК" class="social-icon" d="M192.865,1582.23a15.69,15.69,0,1,1-15.692,15.69A15.687,15.687,0,0,1,192.865,1582.23Zm5.967,18.25a3.1,3.1,0,0,0-.757-2.2,3.7,3.7,0,0,0-2.016-1.09v-0.07a2.886,2.886,0,0,0,1.371-1.14,3.211,3.211,0,0,0,.5-1.77,3.133,3.133,0,0,0-.362-1.52,2.6,2.6,0,0,0-1.091-1.05,4.522,4.522,0,0,0-1.446-.48,17.993,17.993,0,0,0-2.269-.11h-4.8v13.59H193.4a8.906,8.906,0,0,0,2.331-.25,4.783,4.783,0,0,0,1.686-.86,3.684,3.684,0,0,0,1.032-1.27,3.909,3.909,0,0,0,.383-1.78h0Zm-4.372-5.59a1.517,1.517,0,0,0-.169-0.67,1,1,0,0,0-.527-0.5,2.111,2.111,0,0,0-.8-0.17c-0.308,0-.766-0.01-1.374-0.01h-0.237v2.88h0.43c0.583,0,.994-0.01,1.228-0.02a2.044,2.044,0,0,0,.727-0.19,1.129,1.129,0,0,0,.563-0.53,1.9,1.9,0,0,0,.157-0.79h0Zm0.856,5.53a1.673,1.673,0,0,0-.255-0.99,1.533,1.533,0,0,0-.767-0.54,2.658,2.658,0,0,0-.853-0.13c-0.362-.01-0.849-0.01-1.456-0.01h-0.63v3.4h0.184c0.888,0,1.5-.01,1.842-0.02a2.867,2.867,0,0,0,1.041-.24,1.381,1.381,0,0,0,.68-0.59A1.813,1.813,0,0,0,195.316,1600.42Z" transform="translate(-177.188 -1582.22)"/>
+                 </svg>
+                 
+                 </a></li>
          </ul>
-         
-         <ul class="footer-info footer-item">
-             <li><a href="#">Для поставщиков</a></li>
-             <li><a href="#">Наши документы</a></li>
-             <li><a href="#">О производстве</a></li>
-             <li><a href="#">Экологические стандарты</a></li>
-         </ul>
-         
+         <div class="footer-item footer-info-wrapper">
+             <ul class="footer-info">
+                 <li class="footer-info-list"><a href="#" class="footer-info-link underline">Для поставщиков</a></li>
+                 <li class="footer-info-list"><a href="#" class="footer-info-link underline">Наши документы</a></li>
+                 <li class="footer-info-list"><a href="#" class="footer-info-link underline">О производстве</a></li>
+                 <li class="footer-info-list"><a href="#" class="footer-info-link underline">Экологические стандарты</a></li>
+             </ul>
+         </div>
          <div class="copyright footer-item">
-         <img src="#" class="html-logo" alt="Академия HTML">
-         <a href="https://htmlacademy.ru/">Сделано в <span>HTML Academy</span> © 2016</a>
+             <a href="https://htmlacademy.ru/"><img src="/img/logo-academy.svg" class="html-logo" alt="Академия HTML"></a>
+         <p>Сделано в <a href="https://htmlacademy.ru/" class="html-academy-link underline">HTML Academy</a> © 2016</p>
          </div>
      </footer>
         </div>
