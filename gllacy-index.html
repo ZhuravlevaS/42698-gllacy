@@ -10,15 +10,21 @@
       <title>HTML Academy: Глейси</title>
  </head>
     <body>
-        <div class="wrapper">
-    <header  class="container clearfix">
-          <img src="img/logo.svg" class="logo" alt="GllacyShop">
+        
+        <input type="radio" class="slider-input slider-input-1" name="ice-radio" value="slider-3" id="btn-1" checked>
+        <input type="radio" class="slider-input slider-input-2" name="ice-radio" value="slider-3" id="btn-2">
+        <input type="radio" class="slider-input slider-input-3" name="ice-radio" value="slider-3" id="btn-3">
+        
+        <div class="site-wrapper">
+            <div class="content-wrapper">
+    <header  class="clearfix">
+          <img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64">
           <nav>
              <ul class="main-menu">
                  <li class="main-menu-item"><a class="main-menu-link underline-item" href="#"> Каталог</a>
                  <ul class="submenu">
                      <li class="submenu-item"><a href="#" class="new submenu-link">Новинки <div class="line"></div></a></li>
-                     <li class="submenu-item"><a href="#" class="submenu-link">Сливочное</a></li>
+                     <li class="submenu-item"><a href="/gllacy-catalog.html" class="submenu-link">Сливочное</a></li>
                      <li class="submenu-item"><a href="#" class="submenu-link">Щербеты</a></li>    
                      <li class="submenu-item"><a href="#" class="submenu-link">Фруктовый лед</a></li>
                      <li class="submenu-item"><a href="#" class="submenu-link">Мелорин</a></li>     
@@ -37,8 +43,8 @@
                  
                   <div class="form-wrapper">
                     <div class="search-form"> 
-                         <input class="search-form-input form-input" id="search" placeholder="Что ищем?">
-                        <label for="#search" class="sign sign-search">Что ищем?</label>
+                         <input class="search-form-input form-input" id="search" placeholder="Что ищем?" required>
+                        <label for="search" class="sign sign-search">Что ищем?</label>
                     </div>
                  </div>
                
@@ -58,10 +64,10 @@
                  
                      <div class="login-form">
                         
-                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта"> <label for="#email" class="sign sign-email">Электронная почта</label>
+                         <input class="login-form-input form-input" type="email" id="email" placeholder="Электронная почта" required><label for="email" class="sign sign-email">Электронная почта</label>
                          
-                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль"> 
-                         <label for="#password" class="sign sign-password">Пароль</label>
+                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль" required> 
+                         <label for="password" class="sign sign-password">Пароль</label>
                       
                               <a href="#" class="login-btn">Войти</a>
                          <div class="login-link-wrapper">
@@ -90,35 +96,39 @@
          
      </header> 
     
-    <main class="container">
-         <div class="contact-info contact-info-index">
+    <main>
+        
+         <div class="contact-info">
               <p class="contact-info-text-1">С 10 до 20, ежедневно</p><p class="contact-info-text-2">8 812 450-25-25</p>
           </div>
-    <div class="header-icecream">
-        <div class="gradient">
-            <div class="ice-cream-promo-1">
-                <h2>Крем-брюле и пломбир
-                 с малиновым джемом</h2>
-                <a href="#">Давайте оба!</a>
+    <div class="slider">
+      
+        
+            <div class="slider-1 slide">
+                <div class="slider-title">Крем-брюле и пломбир
+                 с малиновым джемом</div>
+                <a href="#" class="slide-btn">Давайте оба!</a>
             </div>
-        </div>
-        <div class="gradient">
-            <div class="ice-cream-promo-2">
-                <h2>Шоколадный пломбир
-                и лимонный сорбет</h2>
-                <a href="#">Давайте оба!</a>
+        
+        
+            <div class="slider-2 slide">
+                <div class="slider-title">Шоколадный пломбир
+                и лимонный сорбет</div>
+                <a href="#" class="slide-btn">Давайте оба!</a>
             </div>
-        </div>
-        <div class="gradient">
-            <div class="ice-cream-promo-3">
-                <h2>Пломбир с помадкой
-                 и клубничный щербет</h2>
-                <a href="#">Давайте оба!</a>
+        
+        
+            <div class="slider-3 slide">
+                <div class="slider-title">Пломбир с помадкой
+                 и клубничный щербет</div>
+                <a href="#" class="slide-btn">Давайте оба!</a>
             </div>
-        </div>
-        <input type="radio" name="ice-radio" value="ice-cream-promo-1">
-        <input type="radio" name="ice-radio" value="ice-cream-promo-2">
-        <input type="radio" name="ice-radio" value="ice-cream-promo-3">
+        
+         <div class="slider-radios">
+            <label for="btn-1" class="slider-label slider-label-1"></label>
+            <label for="btn-2" class="slider-label slider-label-2"></label>
+            <label for="btn-3" class="slider-label slider-label-3"></label>
+       </div>     
     </div>
 
             
@@ -139,43 +149,43 @@
              <div class="good">
                  
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                     <img src="/img/ice-cr-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265">
                  <div class="good-price">310&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></div>
                      
                      <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-cofe-chock.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                     <img src="/img/ice-cr-cofe-chock.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="265" height="265">
                  <div class="good-price">380&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></div>
                      <div class="good-wrapper">
-                 <button class="btn">Быстрый просмотр</button>
+                 <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>  
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-strawb-choko.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                     <img src="/img/ice-cr-strawb-choko.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="265" height="265">
                  <div class="good-price">355&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/ic-crem-brule.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                     <img src="/img/ic-crem-brule.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="265" height="265">
                  <div class="good-price">415&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
@@ -189,6 +199,7 @@
         <div class="second-line-about-us">
             <div class="quality feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</div>
             <div class="delivery feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</div>
+            
         </div>  
         </div> 
         <div class="clearfix">
@@ -201,8 +212,8 @@
                 
                <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </span>
                  <form>
-                    <input type="text" name="email" id="your-email" placeholder="Электронная почта" class="form-input form-input-subscribe">
-                     <label for="#your-email" class="sign sign-subsribe-email">Электронная почта</label>
+                    <input type="text" name="email" id="your-email" placeholder="Электронная почта" class="form-input form-input-subscribe" required>
+                     <label for="your-email" class="sign sign-subsribe-email">Электронная почта</label>
                     <button type="submit" name="send" class="send-btn">Отправить</button>
                  </form>
                 </div>
@@ -228,7 +239,7 @@
             </div>
          </div>
         
-     <footer class="container clearfix">
+     <footer class="clearfix">
          
          <ul class="social footer-item">
              <li class="social-item"><a href="#" class="social-list twitter">
@@ -255,20 +266,23 @@
              </ul>
          </div>
          <div class="copyright footer-item">
-             <a href="https://htmlacademy.ru/"><img src="/img/logo-academy.svg" class="html-logo" alt="Академия HTML"></a>
+             <a href="https://htmlacademy.ru/"><img src="/img/logo-academy.svg" class="html-logo" alt="Академия HTML" width="108" height="37"></a>
          <p>Сделано в <a href="https://htmlacademy.ru/" class="html-academy-link underline">HTML Academy</a> © 2016</p>
          </div>
      </footer>
-        </div>
-        <div class="popup">
+        
+           <div class="model-window">
          <form>
-             <span>Мы обязательно вам ответим!</span>
+             <div class="model-title">Мы обязательно вам ответим!</div>
               <button class="close"></button>
-              <input type="text" name="name" value="Как вас зовут?">
-              <input type="text" name="email" value="Ваша почта для ответа?">
-              <textarea name="text" rows="#" cols="#">Напишите что-нибудь...</textarea>
-              <button type="submit" name="send">Отправить</button>
+              <input type="text" name="name" placeholder="Как вас зовут?" id="name-model" class="form-input input-name-model" required><label class="sign sign-model-1" for="name-model">Как вас зовут?</label>
+              <input type="text" name="email" placeholder="Ваша почта для ответа?" id="email-model" class="form-input input-email-model" required><label for="email-model" class="sign sign-model-2">Ваша почта для ответа?</label>
+              <textarea name="text" rows="5" cols="55" id="text-model" class="form-input input-text-model" placeholder="Напишите что-нибудь..." required></textarea><label for="email-model" class="sign sign-model-3">Напишите что-нибудь...</label>
+              <button type="submit" name="send" class="btn-model">Отправить</button>
          </form>
+            </div>
+                <div class="overlay"></div>
+           </div> 
     </div>
      </body>
     

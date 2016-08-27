@@ -9,11 +9,11 @@
      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
       <title>HTML Academy: Глейси</title>
 </head>
-    <body>
-        
+    <body>       
     <div class="wrapper">
+        <div class="content-wrapper">
      <header class="container clearfix">
-         <a href="#"><img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64"></a>
+         <a href="/gllacy-index.html"><img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64"></a>
          <nav>
              <ul class="main-menu">
                  <li class="selected main-menu-item"><a class="main-menu-link" href="#">Каталог</a>
@@ -39,8 +39,8 @@
                  
                   <div class="form-wrapper">
                     <div class="search-form">
-                         <input class="search-form-input form-input" name="search" placeholder="Что ищем?">
-                          <label for="#search" class="sign sign-search">Что ищем?</label>                      
+                         <input class="search-form-input form-input" id="search" placeholder="Что ищем?" required>
+                         <label for="search" class="sign sign-search">Что ищем?</label>                      
 
                     </div>
                  </div>
@@ -61,10 +61,10 @@
                  
                     <div class="login-form">
                       
-                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта"> <label for="#email" class="sign sign-email">Электронная почта</label>
+                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта"> <label for="email" class="sign sign-email" required>Электронная почта</label>
                          
-                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль"> 
-                         <label for="#password" class="sign sign-password">Пароль</label>
+                         <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль" required> 
+                         <label for="password" class="sign sign-password">Пароль</label>
                       
                       
                               <a href="#" class="login-btn">Войти</a>
@@ -120,7 +120,7 @@
      <main class="container clearfix">
          <div class="clearfix">
              <ul class="breadcrumbs">
-                <li class="breadcumbs-item"><a class="breadcumbs-link underline" href="#">Главная</a></li>
+                <li class="breadcumbs-item"><a class="breadcumbs-link underline" href="/gllacy-index.html">Главная</a></li>
                 <li class="breadcumbs-item"><a class="breadcumbs-link underline" href="#">Каталог</a></li>
                 <li class="breadcumbs-item">Сливочное</li>     
             </ul> 
@@ -133,8 +133,10 @@
          <h1 class="ice-cream">Сливочное мороженое</h1> 
          
       <div class="sorting-wraper">
-          <div class="sorting sort-item"> 
-            Сортировка:
+          <div class="sorting-select sort-item"> 
+              <div class="label">
+                 Сортировка:
+              </div>
              <form> 
              <select>
               <option>по популярности</option>
@@ -146,8 +148,10 @@
           </div>
          
          <form>   
-          <div class="sort-price sort-item">     
-              Цена: <span id="min-price">100</span> руб. - <span id="msx-price">500</span> руб.<br>
+          <div class="sort-item sort-range">     
+              <div class="label">
+                 Цена: <span id="min-price">100</span> руб. - <span id="msx-price">500</span> руб.
+              </div>
              <div class="range-filter">
               <div class="scala">
                 <div class="bar">
@@ -158,147 +162,157 @@
              </div>
            </div>
              
-           <div class="sort-fat sort-item">     
-              Жирность:<br>
-              <label><input type="radio" name="fat" value="0"> 0&#037;</label>
-              <label><input type="radio" name="fat" value="less10"> до 10&#037;</label>
-              <label><input type="radio" name="fat" value="less30">до 30&#037;</label>
-              <label><input type="radio" name="fat" value="more30">выше 30&#037;</label>
+           <div class="sort-item">
+               <div class="label">
+                  Жирность:
+               </div>
+               <div class="sort-fat">
+                   <input type="radio" name="fat" value="0" id="zero" ><label for="zero">0&#037;</label>
+                   <input type="radio" name="fat" value="less10" id="ten" checked><label for="ten"> до 10&#037;</label>
+                   
+                   
+                   <input type="radio" name="fat" value="less30" id="less-30"><label for="less-30">до 30&#037;</label>
+                   <input type="radio" name="fat" value="more30" id="more-30"><label for="more-30">выше 30&#037;</label>
+               </div>
            </div>
            
-           <div class="sort-toppings sort-item">
-           Наполнители:<br>
-               <label><input type="checkbox" name="choko-tops" checked>шоколадные</label>
-               <label><input type="checkbox" name="sugar-tops" checked>сахарные присыпки</label>
-               <label><input type="checkbox" name="fruits">фрукты</label>
-               <label><input type="checkbox" name="syrups">сиропы</label>
-               <label><input type="checkbox" name="jams">джемы</label>
+           <div class="sort-item">
+               <div class="label">
+                  Наполнители:
+               </div>
+               <div class="sort-toppings">
+                   <input type="checkbox" name="choko-tops" id="chocko" checked><label for="chocko">шоколадные</label>
+                   <input type="checkbox" name="sugar-tops" id="sugar" checked><label for="sugar">сахарные присыпки</label>
+                   <input type="checkbox" name="fruits" id="fruit" ><label for="fruit">фрукты</label>
+                   <input type="checkbox" name="syrups" id="syrups"><label for="syrups">сиропы</label>
+                   <input type="checkbox" name="jams" id="jams"><label for="jams">джемы</label>
+               </div>
            </div>
              
-           <button type="submit" class="start-to-search sort-item">Применить</button>
+           <button type="submit" class="sort-search-btn sort-item">Применить</button>
          </form>
     </div>
          <div class="goods">
              <div class="good">
                  
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                     <img src="/img/ice-cr-orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="265" height="265">
                  <div class="good-price">310&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></div>
                      
                      <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-cofe-chock.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                     <img src="/img/ice-cr-cofe-chock.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="265" height="265">
                  <div class="good-price">380&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></div>
                      <div class="good-wrapper">
-                 <button class="btn">Быстрый просмотр</button>
+                 <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>  
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/ice-cr-strawb-choko.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                     <img src="/img/ice-cr-strawb-choko.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="265" height="265">
                  <div class="good-price">355&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/ic-crem-brule.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                     <img src="/img/ic-crem-brule.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="265" height="265">
                  <div class="good-price">415&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/crowbery.jpg" alt="Сливочное с брусничным джемом">
+                     <img src="/img/crowbery.jpg" alt="Сливочное с брусничным джемом" width="265" height="265">
                  <div class="good-price">325&#8381;<span>&#047;кг</span></div>
-                 <div class="good-description"><span class="underline">Сливочное с брусничным <br>джемом</span></div>
+                 <div class="good-description"><span class="underline">Сливочное с брусничным джемом</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/blackberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+                     <img src="/img/blackberry.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="265" height="265">
                  <div class="good-price">410&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-черничное с цельными ягодами черники </span></div>
                   <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                   <a href="#" class="good-link">
-                      <img src="/img/lemon-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+                      <img src="/img/lemon-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="265" height="265">
                  <div class="good-price">375&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочно-лимонное с карамельной присыпкой</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                   <a href="#" class="good-link">
-                      <img src="/img/cream-choko.jpg" alt="Сливочное с шоколадной стружкой">
+                      <img src="/img/cream-choko.jpg" alt="Сливочное с шоколадной стружкой" width="265" height="265">
                  <div class="good-price">320&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное с шоколадной стружкой</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                   <a href="#" class="good-link">
-                      <img src="/img/vanil-choko.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+                      <img src="/img/vanil-choko.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="265" height="265">
                  <div class="good-price">440&#8381;<span>&#047;кг</span></div>
-                 <div class="good-description"><span class="underline">Сливочно-ванильное с<br> кусочками шоколада</span></div>
+                 <div class="good-description"><span class="underline">Сливочно-ванильное с кусочками шоколада</span></div>
                       <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                   <a href="#" class="good-link">
-                      <img src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом">
+                      <img src="/img/menthol.jpg" alt="Сливочноe с ментоловым сиропом" width="265" height="265">
                  <div class="good-price">435&#8381;<span>&#047;кг</span></div>
-                 <div class="good-description"><span class="underline">Сливочноe с ментоловым<br> сиропом</span></div>
+                 <div class="good-description"><span class="underline">Сливочноe с ментоловым сиропом</span></div>
                      <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/cream-blackchoko.jpg" alt="Сливочное с кусочками черного шоколада">
+                     <img src="/img/cream-blackchoko.jpg" alt="Сливочное с кусочками черного шоколада" width="265" height="265">
                  <div class="good-price">355&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное с кусочками черного шоколада</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
              <div class="good">
                  <a href="#" class="good-link">
-                     <img src="/img/mint.jpg" alt="Сливочное с мятным сиропом">
+                     <img src="/img/mint.jpg" alt="Сливочное с мятным сиропом" width="265" height="265">
                  <div class="good-price">420&#8381;<span>&#047;кг</span></div>
                  <div class="good-description"><span class="underline">Сливочное с мятным  сиропом</span></div>
                  <div class="good-wrapper">
-                         <button class="btn">Быстрый просмотр</button>
+                         <div class="btn">Быстрый просмотр</div>
                      </div>
                  </a>
              </div>
@@ -342,10 +356,11 @@
              </ul>
          </div>
          <div class="copyright footer-item">
-             <a href="https://htmlacademy.ru/"><img src="/img/logo-academy.svg" class="html-logo" alt="Академия HTML"></a>
+             <a href="https://htmlacademy.ru/"><img src="/img/logo-academy.svg" class="html-logo" alt="Академия HTML" width="108" height="37"></a>
          <p>Сделано в <a href="https://htmlacademy.ru/" class="html-academy-link underline">HTML Academy</a> © 2016</p>
          </div>
      </footer>
+        </div>
         </div>
     </body>
 </html>
