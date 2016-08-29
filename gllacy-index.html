@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
  <head>
-  <meta charset="utf-8">  
-   <meta name="keywords" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">  
+    <meta name="keywords" content="#">
     <meta name="description" content="#"> 
     <link href="css/normalize.css" rel="stylesheet">
-     <link href="css/style.css" rel="stylesheet">
-     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-      <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <title>HTML Academy: Глейси</title>
  </head>
     <body>
         
@@ -224,6 +225,7 @@
         </main>
           </div>  
          <div class="info-to-get">
+             <div id="yandex-map"></div>
             <div class="wrapper-info">
                 
                     <p class="map-info-item info-block1">Адрес главного офиса и офлайн магазина:</p>
@@ -291,22 +293,50 @@
             var close = document.querySelector(".close-btn");
             var link = document.querySelector(".feedback");
             var overlay = document.querySelector(".overlay");
+            var login = popup.querySelector("[name = name]");
+            var form = popup.querySelector("form");
             
             link.addEventListener("click", function(event){
                 event.preventDefault();
                 popup.classList.add("model-window-show");
                 overlay.classList.add("overlay-show");
+                login.focus();
             })
             
-            
-           
             
             close.addEventListener("click", function(event){
                 event.preventDefault();
                 popup.classList.remove("model-window-show");
                 overlay.classList.remove("overlay-show");
             })
+            
+            overlay.addEventListener("click", function(event){
+                event.preventDefault();
+                popup.classList.remove("model-window-show");
+                overlay.classList.remove("overlay-show");
+            })
+            
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+                console.log("login.value");
+            })
+            window.addEventListener("keydown", function(event) {
+               if (event.keyCode === 27) {
+               if (popup.classList.contains("model-window-show")) 
+               {
+               popup.classList.remove("model-window-show");
+               }
+            }
+            });
+             window.addEventListener("keydown", function(event) {
+               if (event.keyCode === 27) {
+               if (overlay.classList.contains("overlay-show")) 
+               {overlay.classList.remove("overlay-show");
+               }
+            }
+            });
         </script>
+        <script id="yandex-map" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xcEekteXi1gxPxFbRdyS_qvGNvmFtD5d&amp;width=100%&amp&;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
      </body>
     
 </html>
