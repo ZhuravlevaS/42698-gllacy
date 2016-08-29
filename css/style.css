@@ -414,7 +414,7 @@ a:hover.underline {
 }
 
 .site-wrapper {
-    min-width: 1200px;
+    min-width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
     background-color: #9aafa3;
@@ -1525,6 +1525,11 @@ fill-rule: evenodd;
     cursor: pointer;
     position: absolute;
 }
+.toggle:hover {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+}
 
 .sort-item .range-filter {
     position: relative;
@@ -1547,10 +1552,18 @@ fill-rule: evenodd;
     left: -20px;
     top:-9px;
 }
+.min-toggle:hover {
+    left: -21px;
+    top: -10px;
+}
 
 .max-toggle {
     top:-9px;
     right: -20px;
+}
+.max-toggle:hover {
+    top:-10px;
+    right: -21px;
 }
 
 .bar {
@@ -1685,6 +1698,7 @@ fill-rule: evenodd;
 
 .sorting-select {
     position: absolute;
+    top: -1px;
 }
 
 .sort-toppings label {
@@ -1729,6 +1743,7 @@ fill-rule: evenodd;
     padding: 0 29px;
     margin-top: 26px;
     margin-left: 0;
+    cursor: pointer;
 }
 
 .sort-search-btn:hover {
@@ -1771,6 +1786,15 @@ form {
 
 .slider-input-1:checked ~ .site-wrapper .slider-label-1 {
     background: white;
+}
+.slider-label-1:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.slider-label-2:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.slider-label-3:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 .slider-input-2:checked ~ .site-wrapper .slider-label-2 {
     background: white;
@@ -1920,7 +1944,7 @@ form .input-text-model:focus {
 }
 
 
-.close {
+.close-btn {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -1930,7 +1954,7 @@ form .input-text-model:focus {
     right: 15px;
     cursor: pointer;
 }
-.close:before {
+.close-btn:before {
     content: "";
     display: block;
     width: 23px;
@@ -1941,7 +1965,7 @@ form .input-text-model:focus {
     position: absolute;
     left: -4px;
 }
-.close:after {
+.close-btn:after {
     content: "";
     display: block;
     width: 23px;
@@ -1959,11 +1983,12 @@ form .input-text-model:focus {
     min-width: 1200px;
     margin: 0 auto;
     padding: 0 27px;
-    background-color: #9aafa3;
+    background-color: 849d8f;
     font-family: 'Roboto','Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    color: #fefefe;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0,  rgba(255, 255, 255, 0) 647px); 
 }
 
 .sign-model-1 {
@@ -2014,4 +2039,33 @@ body {
     top: 0;
     left: 0;
     z-index: 6;
+}
+.select {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 9px 15px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    width: 193px;
+}
+.select option{
+    background: #8fa699;
+    border: none;
+    outline: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.model-window-show {
+  display: block;  
+}
+
+.overlay-show {
+    display: block;
 }

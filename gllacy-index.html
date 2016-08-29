@@ -276,7 +276,7 @@
            <div class="model-window">
          <form>
              <div class="model-title">Мы обязательно вам ответим!</div>
-              <button class="close"></button>
+              <button class="close-btn"></button>
               <input type="text" name="name" placeholder="Как вас зовут?" id="name-model" class="form-input input-name-model" required><label class="sign sign-model-1" for="name-model">Как вас зовут?</label>
               <input type="text" name="email" placeholder="Ваша почта для ответа?" id="email-model" class="form-input input-email-model" required><label for="email-model" class="sign sign-model-2">Ваша почта для ответа?</label>
               <textarea name="text" rows="5" cols="55" id="text-model" class="form-input input-text-model" placeholder="Напишите что-нибудь..." required></textarea><label for="email-model" class="sign sign-model-3">Напишите что-нибудь...</label>
@@ -286,6 +286,27 @@
                 <div class="overlay"></div>
             
     </div>
+        <script>
+            var popup = document.querySelector(".model-window");
+            var close = document.querySelector(".close-btn");
+            var link = document.querySelector(".feedback");
+            var overlay = document.querySelector(".overlay");
+            
+            link.addEventListener("click", function(event){
+                event.preventDefault();
+                popup.classList.add("model-window-show");
+                overlay.classList.add("overlay-show");
+            })
+            
+            
+           
+            
+            close.addEventListener("click", function(event){
+                event.preventDefault();
+                popup.classList.remove("model-window-show");
+                overlay.classList.remove("overlay-show");
+            })
+        </script>
      </body>
     
 </html>
