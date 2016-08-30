@@ -1361,6 +1361,7 @@ fill-rule: evenodd;
     position: absolute;
     bottom: 28px;
     right: 25px;
+    cursor: pointer;
 }
 
 
