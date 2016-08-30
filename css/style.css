@@ -1317,6 +1317,7 @@ fill-rule: evenodd;
     position: absolute;
     bottom: 34px;
     right: 20px;
+    cursor: pointer;
 }
 
 .form-input-subscribe {
@@ -1931,6 +1932,7 @@ form .input-text-model:focus {
     bottom: 27px;
     right: 24px;
     z-index: 3;
+    cursor: pointer;
 }
 .btn-model:active {
   background: -webkit-linear-gradient(top, #e74b36, #f26843);
