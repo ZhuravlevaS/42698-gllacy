@@ -5,7 +5,7 @@
    <meta name="keywords" content="#">
     <meta name="description" content="#"> 
      <link href="css/normalize.css" rel="stylesheet">
-     <link href="css/style.css" rel="stylesheet">
+     <link href="css/style.min.css" rel="stylesheet">
      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
       <title>HTML Academy: Глейси</title>
 </head>
@@ -13,7 +13,7 @@
     <div class="wrapper">
         <div class="content-wrapper">
      <header class="container clearfix">
-         <a href="/gllacy-index.html"><img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64"></a>
+         <a href="index.html"><img src="img/logo.svg" class="logo" alt="GllacyShop" width="154" height="64"></a>
          <nav>
              <ul class="main-menu">
                  <li class="selected main-menu-item"><a class="main-menu-link" href="#">Каталог</a>
@@ -58,13 +58,13 @@
                  </span>  
                  </div>
                  
-                    <div class="login-form">
-                      
-                         <input class="login-form-input form-input" type="text" id="email" placeholder="Электронная почта" required> <label for="email" class="sign sign-email">Электронная почта</label>
+                    <div class="login-form-wrapper">
+                     <div class="login-form">
+                        
+                         <input class="login-form-input form-input" type="email" id="email" placeholder="Электронная почта" required><label for="email" class="sign sign-email">Электронная почта</label>
                          
                          <input class="login-form-input form-input" type="password" id="password" placeholder="Пароль" required> 
                          <label for="password" class="sign sign-password">Пароль</label>
-                      
                       
                               <a href="#" class="login-btn">Войти</a>
                          <div class="login-link-wrapper">
@@ -72,6 +72,7 @@
                               <a href="#" class="new-registration login-link">Новая регистрация</a>
                          </div>
                     </div>
+                 </div>
              </div>
              
           <div class="basket user-block-item">
