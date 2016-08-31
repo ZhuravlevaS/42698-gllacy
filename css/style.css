@@ -1104,7 +1104,8 @@ a:hover.underline {
     position: absolute;
     width: 9px;
     height: 14px;
-    background-image: url(../img/page-back.svg);
+    background-image: url(../img/sprite.png);
+    background-position: -5px -16px;    
     top: 5px;
     left: 76px;
 }
@@ -1113,7 +1114,8 @@ a:hover.underline {
     position: absolute;
     width: 9px;
     height: 14px;
-    background-image: url(../img/page-next.png);
+    background-image: url(../img/sprite.png);
+    background-position: -5px -35px;
     top: 5px;
     right: 0;
 }
@@ -1356,12 +1358,15 @@ a:hover.underline {
 }
 
 .close-btn {
+    display: block;
     border:none;
     background-color: transparent;
-    background-image: url(../img/X.png);
+    background-image: url(../img/sprite.png);
+    background-position: -5px -0px;
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;
+    cursor: pointer;
 }
 
 
@@ -1918,7 +1923,7 @@ form .input-text-model:focus {
     color:#999999;  
 }
 
-.close-btn {
+.close-btn-model {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -1928,7 +1933,7 @@ form .input-text-model:focus {
     right: 15px;
     cursor: pointer;
 }
-.close-btn:before {
+.close-btn-model:before {
     content: "";
     display: block;
     width: 23px;
@@ -1939,7 +1944,7 @@ form .input-text-model:focus {
     position: absolute;
     left: -4px;
 }
-.close-btn:after {
+.close-btn-model:after {
     content: "";
     display: block;
     width: 23px;
