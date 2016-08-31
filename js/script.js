@@ -1,5 +1,5 @@
 var popup = document.querySelector(".model-window");
-var close = document.querySelector(".close-btn");
+var close = document.querySelector(".close-btn-model");
 var link = document.querySelector(".feedback");
 var overlay = document.querySelector(".overlay");
 var login = popup.querySelector("[name = name]");
